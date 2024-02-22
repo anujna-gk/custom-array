@@ -1,2 +1,2 @@
-# friends-share
-Problem Statement - 3 where, 3 friends who live apart has to find a means to exchange details about their own professions
+# custom-array
+A custom array constructor with custom push and pop methods have to be created, using .prototype in Javascript
