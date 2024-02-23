@@ -16,8 +16,6 @@ function Array() {
 }
 
 Array.prototype.custompush = function (item) {
-  //console.log("hey");
-  // console.log(this.sizeproperty);
   last = this.sizeproperty;
   this[last] = item;
   this.sizeproperty++;
@@ -26,13 +24,12 @@ Array.prototype.custompush = function (item) {
 
 Array.prototype.custompop = function () {
   last = this.sizeproperty;
-  //console.log(last);
+
   if (last === 0) {
     console.log("empaty array");
     return;
   } else {
     delete this[last - 1];
-    //console.log("heyyy2");
     this.sizeproperty--;
     console.log(this);
   }
@@ -41,15 +38,12 @@ Array.prototype.custompop = function () {
 console.log("obj 1");
 const array1 = new Array(5, 6, 7, 8);
 console.log(array1);
-//console.log(array1);
+
 array1.custompush(9);
-//console.log(array1);
-array1.custompop();
-//console.log(array1);
 
 console.log("obj 2");
 const array2 = new Array();
-//console.log(array2);
+
 array2.custompop();
 
 console.log("obj 3");
